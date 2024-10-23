@@ -3,13 +3,17 @@ import nails2 from './nails2.jpeg'
 import nail_logo from './nail_logo.jpeg'
 import nail_tech_1 from './nail_tech_1.jpeg'
 import nail_tech_2 from './nail_tech_2.jpeg'
+import profile_pic from './profile_pic.png'
+import dropdown_icon from './dropdown_icon.png'
 
 export const assets = {
     nail_tech_1,
     nail_tech_2,
     nail_logo,
     nails,
-    nails2
+    nails2,
+    profile_pic,
+    dropdown_icon
 }
 
 export const nail_techs = [
