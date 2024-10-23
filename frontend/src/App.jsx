@@ -8,20 +8,22 @@ import Contact from './pages/Contact'
 import Profile from './pages/Profile'
 import Appointments from './pages/Appointments'
 import Booking from './pages/Booking'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
-      <Routes>
-        <Route path='/' element={ <Home /> } />
-        <Route path='/nailtechs' element={ <NailTechs /> } />
-        <Route path='/login' element={ <Login /> } />
-        <Route path='/about' element={ <About /> } />
-        <Route path='/contact' element={ <Contact /> } />
-        <Route path='/profile' element={ <Profile /> } />
-        <Route path='/appointments' element={ <Appointments /> } />
-        <Route path='/booking/:techId' element={ <Booking /> } />
-      </Routes>
+      <Navbar />
+        <Routes>
+          <Route path='/' element={ <Home /> } />
+          <Route path='/nailtechs' element={ <NailTechs /> } />
+          <Route path='/login' element={ <Login /> } />
+          <Route path='/about' element={ <About /> } />
+          <Route path='/contact' element={ <Contact /> } />
+          <Route path='/profile' element={ <Profile /> } />
+          <Route path='/appointments' element={ <Appointments /> } />
+          <Route path='/booking/:techId' element={ <Booking /> } />
+        </Routes>
     </div>
   )
 }

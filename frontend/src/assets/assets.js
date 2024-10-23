@@ -1,11 +1,13 @@
 import nails from './nails.jpeg'
 import nails2 from './nails2.jpeg'
+import nail_logo from './nail_logo.jpeg'
 import nail_tech_1 from './nail_tech_1.jpeg'
 import nail_tech_2 from './nail_tech_2.jpeg'
 
 export const assets = {
     nail_tech_1,
     nail_tech_2,
+    nail_logo,
     nails,
     nails2
 }
