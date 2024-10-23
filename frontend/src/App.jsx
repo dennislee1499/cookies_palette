@@ -9,6 +9,7 @@ import Profile from './pages/Profile'
 import Appointments from './pages/Appointments'
 import Booking from './pages/Booking'
 import Navbar from './components/Navbar'
+import Services from './pages/Services'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/login' element={ <Login /> } />
           <Route path='/policy' element={ <Policy /> } />
           <Route path='/contact' element={ <Contact /> } />
+          <Route path='/services' element={ <Services /> } />
           <Route path='/profile' element={ <Profile /> } />
           <Route path='/appointments' element={ <Appointments /> } />
           <Route path='/booking/:techId' element={ <Booking /> } />

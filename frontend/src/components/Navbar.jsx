@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 const Navbar = () => {
     const navigate = useNavigate();
     const [showMenu, setShowMenu] = useState(false);
-    const [token, setToken] = useState(true);
+    const [token, setToken] = useState(false);
  
   return (
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
@@ -16,8 +16,12 @@ const Navbar = () => {
                 <li className='py-1'>Home</li>
                 <hr className='border-none outline-none h-0.5  w-3/5 m-auto hidden' />
             </NavLink>
-            <NavLink to='/nailtechs' className='hover:text-gray-400'>
+            {/* <NavLink to='/nailtechs' className='hover:text-gray-400'>
                 <li className='py-1'>Team</li>
+                <hr className='border-none outline-none h-0.5 w-3/5 m-auto hidden' />
+            </NavLink> */}
+            <NavLink to='/services' className='hover:text-gray-400'>
+                <li className='py-1'>Services</li>
                 <hr className='border-none outline-none h-0.5 w-3/5 m-auto hidden' />
             </NavLink>
             <NavLink to='/policy' className='hover:text-gray-400'>
